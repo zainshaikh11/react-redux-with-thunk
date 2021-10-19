@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import { connect } from 'react-redux'
-import { fetchActivityDetail } from '../reducers/activityActions'
+import { fetchActivityDetail } from '../reducers/reducer_activity/activity_actions'
 
 
 const ShowActivity = (props) => {
@@ -14,16 +14,17 @@ const ShowActivity = (props) => {
     return (
         <div>
             <h1 style={{color: "red"}}>{props.error && "ERROR"}</h1>
-            <h1 style={{color: "blue"}}>{props.loading && "Loading..."}</h1>
-            <h1 style={{color: "green"}}>{props.data && props.data.activity}</h1>
+            <h1>Activity</h1>
+            <h1 style={{color: "blue"}}>{props.loading && "Fetching Activity, Please Wait..."}</h1>
+            <h1>{props.data && props.data.activity}</h1>
         </div>
     )
 }
 
 const mapStateToProps = (state) => ({
-    data: state.data,
-    loading: state.loading,
-    error: state.error
+    data: state.activity.data,
+    loading: state.activity.loading,
+    error: state.activity.error
 })
 
 export default connect(mapStateToProps)(ShowActivity)

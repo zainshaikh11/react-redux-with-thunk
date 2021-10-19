@@ -1,18 +1,24 @@
-import { Provider } from 'react-redux'
-import thunk from 'redux-thunk'
-import { createStore, applyMiddleware } from 'redux'
-import { reducerOne } from './reducers/reducer_one'
-import ShowActivity from './pages/ShowActivity'
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
+import { createStore, applyMiddleware } from "redux";
+import ShowActivity from "./pages/ShowActivity";
+import { rootReducer } from "./reducers/root_reducer";
+import ShowJoke from "./pages/ShowJoke";
+import "./App.css";
 
-const store = createStore(
-  reducerOne,
-  applyMiddleware(thunk)
-)
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 function App() {
   return (
     <Provider store={store}>
-      <ShowActivity />
+      <div className="block__main">
+        <div className="block__left">
+          <ShowActivity />
+        </div>
+        <div className="block__right">
+          <ShowJoke />
+        </div>
+      </div>
     </Provider>
   );
 }

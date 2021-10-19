@@ -2,7 +2,7 @@ import {
     FETCH_ACTIVITY_BEGIN,
     FETCH_ACTIVITY_SUCCESS,
     FETCH_ACTIVITY_FAILURE
-} from './activityActions'
+} from './activity_actions'
 
 
 const initialState = {
