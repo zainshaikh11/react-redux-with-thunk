@@ -53,3 +53,11 @@
   color: white;
   transform: scale(.8);
 }
+
+@media screen and (max-width: 768px) {
+
+  .block__main {
+    flex-direction: column;
+  }
+
+}
