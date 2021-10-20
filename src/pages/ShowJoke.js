@@ -9,6 +9,7 @@ import {
   loadingSelector,
   errorSelector,
 } from "../reducers/reducer_joke/selectors";
+import loading from '../loading.gif'
 
 const ShowJoke = (props) => {
   const dispatch = props.dispatch;
@@ -24,9 +25,14 @@ const ShowJoke = (props) => {
     <div>
       <h1 style={{ color: "red" }}>{props.error && "ERROR"}</h1>
       <h1>Joke</h1>
-      <h1 style={{ color: "blue" }}>
-        {props.loading && "Fetching A Joke, Please Wait..."}
-      </h1>
+      <div className="block__loading">
+          {props.loading && (
+            <>
+              <img src={loading} alt="loading..." />
+              <p>Fetching A Joke, Please Wait...</p>
+            </>
+          )}
+      </div>
       <h1>{props.data && props.data.setup}</h1>
       <h2>{props.data && props.data.delivery}</h2>
       <div>

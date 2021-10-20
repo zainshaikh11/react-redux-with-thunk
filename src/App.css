@@ -39,6 +39,20 @@
   text-align: center;
 }
 
+.block__loading {
+  margin: none;
+}
+
+.block__loading > img{
+  height: 70px;
+  width: 80px;
+  margin-left: -20px;
+}
+
+.block__loading > p {
+  margin-top: -20px;
+}
+
 .elem__button--right {
   border: none;
   background: var(--left);
@@ -52,6 +66,25 @@
   background-color: #3e8e41;
   color: white;
   transform: scale(.8);
+}
+
+.elem__button--left {
+  border: none;
+  background: var(--right);
+  height: 50px;
+  width: 100px;
+  margin: 4px;
+  transition: all 0.2s;
+}
+
+.elem__button--left:active {
+  background-color: #3e8e41;
+  color: white;
+  transform: scale(.8);
+}
+
+h1 {
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
