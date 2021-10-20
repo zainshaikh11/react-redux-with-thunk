@@ -1,7 +1,8 @@
 import {
     FETCH_JOKE_BEGIN,
     FETCH_JOKE_SUCCESS,
-    FETCH_JOKE_FAILURE
+    FETCH_JOKE_FAILURE,
+    CHANGE_JOKE_TEST
 } from './joke_actions'
 
 
@@ -17,7 +18,8 @@ export const jokeReducer = (state=initialState, action) => {
             return {
                 ...state,
                 loading: true,
-                error: null
+                error: null,
+                joke: {}
             }
         case FETCH_JOKE_SUCCESS:
             return {
@@ -31,6 +33,12 @@ export const jokeReducer = (state=initialState, action) => {
                 loading: false,
                 error: action.payload.error,
                 joke: {}
+            }
+        case CHANGE_JOKE_TEST:
+            return {
+                ...state,
+                loading: false,
+                joke: action.payload.data
             }
         default:
             return state

@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import { connect } from 'react-redux'
+import {dataSelector, loadingSelector, errorSelector} from '../reducers/reducer_activity/selectors'
 import { fetchActivityDetail } from '../reducers/reducer_activity/activity_actions'
 
 
@@ -22,9 +23,9 @@ const ShowActivity = (props) => {
 }
 
 const mapStateToProps = (state) => ({
-    data: state.activity.data,
-    loading: state.activity.loading,
-    error: state.activity.error
+    data: dataSelector(state),
+    loading: loadingSelector(state),
+    error: errorSelector(state)
 })
 
 export default connect(mapStateToProps)(ShowActivity)

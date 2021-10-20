@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
 
+:root {
+  --left: #fcde67;
+  --right: #5bccf6;
+}
+
+* {
+  font-family: 'Cabin Sketch', cursive;
+}
 
 .block__main {
-  font-family: 'Cabin Sketch', cursive;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -14,7 +21,7 @@
   display: flex;
   height: 100vh;
   width: 100%;
-  background: #fcde67;
+  background: var(--left);
   color: #030e12;
   justify-content: center;
   align-items: center;
@@ -25,9 +32,24 @@
   display: flex;
   height: 100vh;
   width: 100%;
-  background: #5bccf6;
+  background: var(--right);
   color: #030e12;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.elem__button--right {
+  border: none;
+  background: var(--left);
+  height: 50px;
+  width: 100px;
+  margin: 4px;
+  transition: all 0.2s;
+}
+
+.elem__button--right:active {
+  background-color: #3e8e41;
+  color: white;
+  transform: scale(.8);
 }

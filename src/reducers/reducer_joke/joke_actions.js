@@ -1,6 +1,7 @@
 export const FETCH_JOKE_BEGIN   = 'FETCH_JOKE_BEGIN';
 export const FETCH_JOKE_SUCCESS = 'FETCH_JOKE_SUCCESS';
 export const FETCH_JOKE_FAILURE = 'FETCH_JOKE_FAILURE';
+export const CHANGE_JOKE_TEST = 'CHANGE_JOKE_TEST';
 
 export const fetchJoke = () => ({
   type: FETCH_JOKE_BEGIN
@@ -15,6 +16,11 @@ export const fetchJokeFailure = error => ({
   type: FETCH_JOKE_FAILURE,
   payload: { error }
 });
+
+export const changeJokeTest = joke => ({ 
+  type: CHANGE_JOKE_TEST,
+  payload: {data : joke}
+})
 
 
 export const fetchJokeDetail = () => {
