@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/react-redux-with-thunk/static/css/main.a60a5189.chunk.css",
-    "main.js": "/react-redux-with-thunk/static/js/main.4e661558.chunk.js",
-    "main.js.map": "/react-redux-with-thunk/static/js/main.4e661558.chunk.js.map",
+    "main.css": "/react-redux-with-thunk/static/css/main.3079a040.chunk.css",
+    "main.js": "/react-redux-with-thunk/static/js/main.46004c5c.chunk.js",
+    "main.js.map": "/react-redux-with-thunk/static/js/main.46004c5c.chunk.js.map",
     "runtime-main.js": "/react-redux-with-thunk/static/js/runtime-main.65754e28.js",
     "runtime-main.js.map": "/react-redux-with-thunk/static/js/runtime-main.65754e28.js.map",
     "static/js/2.a789cdbb.chunk.js": "/react-redux-with-thunk/static/js/2.a789cdbb.chunk.js",
     "static/js/2.a789cdbb.chunk.js.map": "/react-redux-with-thunk/static/js/2.a789cdbb.chunk.js.map",
     "index.html": "/react-redux-with-thunk/index.html",
-    "static/css/main.a60a5189.chunk.css.map": "/react-redux-with-thunk/static/css/main.a60a5189.chunk.css.map",
-    "static/js/2.a789cdbb.chunk.js.LICENSE.txt": "/react-redux-with-thunk/static/js/2.a789cdbb.chunk.js.LICENSE.txt"
+    "static/css/main.3079a040.chunk.css.map": "/react-redux-with-thunk/static/css/main.3079a040.chunk.css.map",
+    "static/js/2.a789cdbb.chunk.js.LICENSE.txt": "/react-redux-with-thunk/static/js/2.a789cdbb.chunk.js.LICENSE.txt",
+    "static/media/loading.16d0e183.gif": "/react-redux-with-thunk/static/media/loading.16d0e183.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.65754e28.js",
     "static/js/2.a789cdbb.chunk.js",
-    "static/css/main.a60a5189.chunk.css",
-    "static/js/main.4e661558.chunk.js"
+    "static/css/main.3079a040.chunk.css",
+    "static/js/main.46004c5c.chunk.js"
   ]
 }
